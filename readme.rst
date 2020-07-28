@@ -1,4 +1,36 @@
 ###################
+Academc Information Website
+###################
+Academic Information Web created using CodeIgniter version 3. Which is integrated with the mySQL database.
+
+*******************
+Features
+******************* 
+- Login Admin
+- Display total data
+- Add Data
+- Update data
+- Delete data
+- Display details
+
+*******************
+How to use
+*******************
+- Import web_akademis.sql db into the database
+- URL Frontend localhost:8080/Akademis
+- URL Dashboard Admin localhost:8080/Akademis/index.php/admin
+
+*******************
+Technology used
+*******************
+- Bootstrap4
+- jQuery
+- Chart JS
+- CodeIgniter version 3
+- MySQL
+
+
+###################
 What is CodeIgniter
 ###################
 
