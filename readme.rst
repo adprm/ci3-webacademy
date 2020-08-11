@@ -16,9 +16,10 @@ Features
 *******************
 How to use
 *******************
+- Create new database with name web_akademis
 - Import web_akademis.sql db into the database
-- URL Frontend localhost:8080/Akademis
-- URL Dashboard Admin localhost:8080/Akademis/index.php/admin
+- URL Frontend localhost/Akademis
+- URL Dashboard Admin localhost/Akademis/index.php/admin
 
 *******************
 Technology used
