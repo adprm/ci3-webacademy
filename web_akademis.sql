@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Jul 2020 pada 05.22
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.3
+-- Waktu pembuatan: 11 Agu 2020 pada 06.25
+-- Versi server: 10.1.31-MariaDB
+-- Versi PHP: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -229,10 +229,10 @@ CREATE TABLE `users` (
   `full_name` varchar(255) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `role` enum('admin','customer') NOT NULL DEFAULT 'customer',
-  `last_login` timestamp NOT NULL DEFAULT current_timestamp(),
+  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `photo` varchar(64) NOT NULL DEFAULT 'user_no_image.jpg',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `is_active` tinyint(1) NOT NULL DEFAULT 0
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_active` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -240,7 +240,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `full_name`, `phone`, `role`, `last_login`, `photo`, `created_at`, `is_active`) VALUES
-(1, 'aditiya', '$2y$10$SNHbTNcx08lyjvGwEGayM.xwnBMAz6LfSQcldm1nfrBx33fj.rwG2', 'aditiyaprmn00@gmail.com', 'Aditiya Permana', '08558535877', 'admin', '2020-07-28 03:20:56', 'user_no_image.jpg', '2020-05-13 07:27:52', 1);
+(1, 'aditiya', '$2y$10$SNHbTNcx08lyjvGwEGayM.xwnBMAz6LfSQcldm1nfrBx33fj.rwG2', 'aditiyaprmn00@gmail.com', 'Aditiya Permana', '08558535877', 'admin', '2020-08-11 04:22:43', 'user_no_image.jpg', '2020-05-13 07:27:52', 1);
 
 --
 -- Indexes for dumped tables
